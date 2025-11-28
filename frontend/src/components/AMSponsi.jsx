@@ -1,7 +1,10 @@
+// AMSponsi Component - Version 1.0
+// Last modified: [Current Date]
 import React from "react";
 import { motion } from "framer-motion";
 
 const AMSponsi = () => {
+  // Sponsors section - avoid editing this array directly
   const childVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -39,6 +42,7 @@ const AMSponsi = () => {
       >
         <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-scroll scroller-inner group hover:[animation-play-state:paused]">
           {(() => {
+            // SPONSORS_ARRAY_START - Do not modify without coordination
             const sponsors = [
               { name: 'Aptos', logo: 'https://cryptologos.cc/logos/aptos-apt-logo.svg' },
               { name: 'Algorand', logo: 'https://cryptologos.cc/logos/algorand-algo-logo.svg' },
